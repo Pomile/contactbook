@@ -1,2 +1,2 @@
 # contactbook
-Contact Book application allows user to store , view and manage their contact.
+Contact Book application allows users to store , view and manage their contacts.
