@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: teal;
+}
+
+a {
+    color: #039;
+}
+a:hover {
+    color: #03F;
+}
+
+/*set heading styles*/

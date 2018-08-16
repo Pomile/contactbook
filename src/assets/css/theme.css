@@ -1,0 +1,25 @@
+.transparent{
+    background-color: transparent;
+}
+.transparent-bg{
+    background-color:  rgba(0,0,0,0.5);
+}
+.teal-bgcolor{
+    background-color: teal;
+}
+
+.tomato-bgcolor{
+    background-color: tomato;
+}
+
+.green-bgcolor{
+    background-color: green;
+}
+
+.orange-bgcolor{
+    background-color: orange;
+}
+
+.orangered-bgcolor{
+    background-color: orangered;
+}
