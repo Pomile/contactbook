@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        
+        <script>
+            window.onload = function () {
+                    document.getElementById("wrapper").style.display = "block";
+            };
+        
+        </script>
+        <style>
+            #wrapper{
+                    display: none;
+            }
+        
+           .section-1{
+               height: 600px;
+               padding: 10% 0px 0px 10%;
+            
+           }
+           .section-2{
+               height: 580px;
+               padding-top: 120px;
+               /*background-color: aliceblue;*/
+           }
+
+
+           
+        </style>
+    </head>
+    <body>
+        
+        <div id="wrapper">
+            <div class="backdrop hide-on-medium-and-up" id="backdrop" >
+
+            </div>
+            <nav class="sidenav-wrapper sidenav-wrapper--is-close" id="sidenavWrapper">
+                        <div class="col-sm-12 sidenav-wrapper__header">
+                                    
+                            <div class="sidenav-wrapper__picture-holder">
+                                <img src="./assets/images/user.png" height=40px width=40px>
+                            </div>
+                    
+                        </div>
+                        <ul class="sidenav">
+                            <li class="sidenav__item">
+                                <a class="sidenav__item-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="sidenav__item s-12">
+                                <a class="sidenav__item-link" href="./signin.html">Sign in</a>
+                            </li>
+                        </ul>
+             </nav>
+           <div id="header" class="teal-bgcolor">
+                <div class="sidedrawer hide-on-large-only" id="sidedrawer">
+                        <div class="sidedrawer__stroke"></div>
+                        <div class="sidedrawer__stroke"></div>
+                        <div class="sidedrawer__stroke"></div>
+                </div>
+                    <div class="logo">
+                        <img class="logo__img" src="./assets/images/contact-logo.png"/>
+                    </div>
+                        <ul class="nav nav__shift-right hide-on-medium-and-down">
+                                <li class="nav__item" ><a class="nav__link nav__link-full-height" href="index.html">Home</a></li>
+                                <li class="nav__item" ><a class="nav__link nav__link-full-height" href="signin.html">Sign in</a></li>
+                        </ul>
+                </div>
+        <div id="main" style="background-color: white;">
+            <section class="section-1 col-l-5 hide-on-medium-and-down">
+                  <img src="./assets/images/sign.jpg" height="300px" width="280px" style=""/>
+                  <h2 class="teal-tcolor">Sign up for free account</h2>
+                  <ul>
+                      <li>Access your contact anytime anywhere</li>
+                      <li>Backup your contact</li>
+                      <li>Save up to 10000 contacts</li>
+                  </ul>
+            </section>
+            <section class="section-2 col-sm-12 col-m-12 col-l-6" style="">
+                    <div class="sign-up-box col-sm-10 col-m-6 col-l-8 offset-m-3 offset-l-2 offset-sm-1 ">
+                            <form class="sign-up-box__form">
+                                <h2 style="color: teal">Create account</h2>
+                                <div>
+                                    <input type="text" class="sign-up-box__input" name="firstname" id="firstname" placeholder ="Firstname" required/>
+                                </div>
+                                <div>
+                                    <input type="text" class="sign-up-box__input" name="lastname" id="lastname" placeholder ="Firstname" required/>
+                                </div>
+                                <div>
+                                    <input type="email" class="sign-up-box__input" name="email" id="email" placeholder ="john.doe@live.com" required/>
+                                </div>
+                                <div>
+                                    <input type="password" class="sign-up-box__input" name="password" id="password" placeholder ="Password" required/>
+                                </div>
+                                <div>
+                                    <input type="password" class="sign-up-box__input" name="cofirmpassword" id="confirmpassword" placeholder ="confirmpassword" required/>
+                                </div>
+                                <div>
+                                    <button class="button sign-up-box__button button-small flip-right "id="signupBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+            </section>
+        </div>
+        <div id="footer">soft-sky@live.co.uk</div>
+        </div>
+    </body>
+</html>

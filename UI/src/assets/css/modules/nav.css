@@ -19,7 +19,9 @@
     color:white;
     cursor: pointer
 }
-
+.nav__link-full-height{
+    padding: 19px 16px;
+}
 .nav__shift-right{
     margin-right: 5%;
 }

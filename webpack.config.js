@@ -1,7 +1,7 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -9,7 +9,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'UI/src'),
   entry: {
     main: './main.js',
   },
@@ -91,9 +91,18 @@ module.exports = {
       filename: 'index.html',
       template: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Sign up',
+      filename: 'signup.html',
+      template: 'signup.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Sign in',
+      filename: 'signin.html',
+      template: 'signin.html',
+    }),
     new CleanWebpackPlugin(['dist']),
     devMode ? new webpack.NamedModulesPlugin() : '',
     devMode ? new webpack.HotModuleReplacementPlugin() : '',
-
   ],
 };

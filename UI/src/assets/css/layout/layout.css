@@ -14,15 +14,18 @@
 
 #main{
     height: 700px;
-    background-color: aliceblue;
+    display: flex;
 }
 
 
 #footer{
-    height: 50px;
+    height: 40px;
     background-color: teal;
     bottom: 0;
     left: 0;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
 }
 
 #side-bar{
@@ -30,5 +33,3 @@
     background-color: black;
     height: 100%;
 }
-
-

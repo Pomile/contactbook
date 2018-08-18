@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        <style>
+        #wrapper{
+            display: none;
+        }
+
+       </style>
+       <script>
+           window.onload = function () {
+               document.getElementById("wrapper").style.display = "block";
+           };
+
+       </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="backdrop hide-on-medium-and-up" id="backdrop" >
+
+                    </div>
+                    <nav class="sidenav-wrapper sidenav-wrapper--is-close" id="sidenavWrapper">
+                        <div class="col-sm-12 sidenav-wrapper__header">
+                                    
+                            <div class="sidenav-wrapper__picture-holder">
+                                <img src="./assets/images/user.png" height=40px width=40px>
+                            </div>
+                    
+                        </div>
+                        <ul class="sidenav">
+                            <li class="sidenav__item">
+                                <a class="sidenav__item-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="sidenav__item s-12">
+                                <a class="sidenav__item-link" href="./signup.html">Create account</a>
+                            </li>
+                        </ul>
+                </nav>
+           <div id="header" class="teal-bgcolor">
+                <div class="sidedrawer hide-on-large-only" id="sidedrawer">
+                        <div class="sidedrawer__stroke"></div>
+                        <div class="sidedrawer__stroke"></div>
+                        <div class="sidedrawer__stroke"></div>
+                </div>
+                    <div class="logo">
+                        <img class="logo__img" src="./assets/images/contact-logo.png"/>
+                    </div>
+                        <ul class="nav nav__shift-right hide-on-medium-and-down">
+                                <li class="nav__item" ><a class="nav__link nav__link-full-height" href="index.html">Home</a></li>
+                                <li class="nav__item" ><a class="nav__link nav__link-full-height" href="signup.html">Sign up</a></li>
+                        </ul>
+                </div>
+        <div id="main" style="justify-content: center;background-color: white;">
+            
+                    <div class="sign-in-box col-sm-12 col-m-4 col-l-3">
+                        <center>
+                            <img src="./assets/images/contactcube.jpg" />
+                            <h2>Sign in</h2>
+                            <form class="sign-in-box__form">
+                                
+                                <div>
+                                    <input type="email" class="sign-up-box__input" name="email" id="email" placeholder ="john.doe@live.com" required/>
+                                </div>
+                                <div>
+                                    <input type="password" class="sign-up-box__input" name="password" id="password" placeholder ="Password" required/>
+                                </div>
+                                <button class="button sign-in-box__button button-small " id="loginBtn">Submit</button>
+                                <div><a style="color:orangered; text-decoration: none" href="#">Forgot password</a></div>
+                                
+                            
+                            </form>
+                        </center>
+                    </div>
+            
+        </div>
+        <div id="footer">soft-sky@live.co.uk</div>
+        </div>
+    </body>
+</html>

@@ -3,23 +3,58 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
+        <style>
+         #wrapper{
+             display: none;
+         }
+
+        </style>
+        <script>
+            window.onload = function () {
+                document.getElementById("wrapper").style.display = "block";
+            };
+
+        </script>
     </head>
     <body>
-        <div id="header" class= "transparent-bg">
-            <div class="sidedrawer hide-on-large-only">
-                <div class="sidedrawer__stroke"></div>
-                <div class="sidedrawer__stroke"></div>
-                <div class="sidedrawer__stroke"></div>
+        <div id="wrapper">
+            <div class="backdrop hide-on-medium-and-up" id="backdrop" >
+
             </div>
-                
-            <div class="logo">
-                <img class="logo__img" src="./assets/images/contact-logo.png"/>
-            </div>
+            <nav class="sidenav-wrapper sidenav-wrapper--is-close" id="sidenavWrapper">
+                <div class="col-sm-12 sidenav-wrapper__header">
+                            
+                    <div class="sidenav-wrapper__picture-holder">
+                        <img src="./assets/images/user.png" height=40px width=40px>
+                    </div>
             
-                <ul class="nav nav__shift-right hide-on-medium-and-down">
-                    <li class="nav__item"><a class="nav__link nav__link-with-border">Create account</a></li>
-                    <li class="nav__item" ><a class="nav__link nav__link-with-border">Sign in</a></li>
+                </div>
+                <ul class="sidenav">
+                    <li class="sidenav__item">
+                        <a class="sidenav__item-link" href="./signin.html">Sign in</a>
+                    </li>
+                    <li class="sidenav__item s-12">
+                        <a class="sidenav__item-link" href="./signup.html">Create account</a>
+                    </li>
                 </ul>
+            </nav>
+            <div id="header" class= "transparent-bg">
+
+                <div class="sidedrawer hide-on-large-only" id="sidedrawer">
+                    <div class="sidedrawer__stroke"></div>
+                    <div class="sidedrawer__stroke"></div>
+                    <div class="sidedrawer__stroke"></div>
+                </div>
+                    
+                <div class="logo">
+                    <img class="logo__img" src="./assets/images/contact-logo.png"/>
+                </div>
+                
+                <ul class="nav nav__shift-right hide-on-medium-and-down">
+                        <li class="nav__item"><a class="nav__link nav__link-with-border" href="signup.html">Create account</a></li>
+                        <li class="nav__item" ><a class="nav__link nav__link-with-border" href="signin.html">Sign in</a></li>
+                </ul>
+            
         </div>
         <div id="main">
             <div class="home">
@@ -55,6 +90,7 @@
             </div>
             <div id="home__footer"></div>
         </div>
+    </div>
 
     </body>
 </html>

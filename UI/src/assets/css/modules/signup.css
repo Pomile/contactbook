@@ -1,0 +1,8 @@
+.sign-up-box{
+    height: 450px;
+}
+
+.sign-up-box__button{
+    margin: 30px 0px;
+   background-color: teal;
+}

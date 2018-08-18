@@ -7,14 +7,14 @@
 .teal-bgcolor{
     background-color: teal;
 }
+.green-bgcolor{
+    background-color: #4CAF50;
+}
 
 .tomato-bgcolor{
     background-color: tomato;
 }
 
-.green-bgcolor{
-    background-color: green;
-}
 
 .orange-bgcolor{
     background-color: orange;
@@ -22,4 +22,12 @@
 
 .orangered-bgcolor{
     background-color: orangered;
+}
+
+.teal-tcolor{
+    color:teal
+}
+
+.orangered-tcolor{
+    color: orangered;
 }
